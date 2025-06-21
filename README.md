@@ -4,7 +4,7 @@ You need to have python installed. To install dependencies run this command :
 ```
 pip install -r requirements.txt
 ```
-Then you need to insall uvicorn: 
+Then you need to install uvicorn: 
 ```
 pip install uvicorn
 ```
