@@ -47,7 +47,7 @@ def get_valid_breeds():
     return valid_breeds
 
 
-@router.patch("/{cat_id}/salary", response_model=Cat)
+@router.patch("/{cat_id}", response_model=Cat)
 def update_cat_salary(cat_id: int, salary_update: SalaryUpdate, db: Session = Depends(get_db)):
     cat = db.query(CatDB).filter(CatDB.id == cat_id).first()
     if not cat:
